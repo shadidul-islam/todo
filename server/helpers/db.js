@@ -1,6 +1,7 @@
 require('dotenv').config();
 const { Pool } = require('pg');
 
+// Database connection criteria
 const openDb = () => {
     const pool = new Pool({
         user: process.env.DB_USER,
@@ -12,6 +13,7 @@ const openDb = () => {
     return pool;
 };
 
+// Setup query
 const query = (sql, values = []) => {
     return new Promise(async (resolve, reject) => {
         try {
@@ -24,6 +26,4 @@ const query = (sql, values = []) => {
     });
 };
 
-module.exports = {
-    query,
-};
+module.exports = { query };
