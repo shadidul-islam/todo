@@ -8,17 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
-        background-image: url("https://raw.githubusercontent.com/verus315/burger-menu/refs/heads/main/chicken1.jpg");
+        background: url("https://raw.githubusercontent.com/verus315/burger-menu/refs/heads/main/martin-martz-U3SJ5SMLOPE-unsplash.jpg") no-repeat center center fixed;
         background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+      }
+
+      .todo-container {
+        background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       }
     </style>
   </head>
-  <body class="container mt-4">
-    <div class="container-fluid bg-white p-4 rounded shadow">
-      <h3 class="text-primary">ToDo</h3>
+  <body class="d-flex justify-content-center align-items-center">
+    <div class="container todo-container">
+      <h3 class="text-primary text-center">ToDo</h3>
 
       <form>
         <input id="taskInput" class="form-control mb-3" placeholder="Add new task..." />
