@@ -1,12 +1,52 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.container-fluid {
+  max-width: 500px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 h3 {
-    margin: 1em 0; 
-    padding: 0 0; 
+  font-weight: bold;
+  text-align: center;
 }
 
 form {
-    margin-bottom: 1em; 
+  margin-top: 15px;
+}
+
+#taskInput {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+}
+
+#taskList {
+  margin-top: 15px;
 }
 
 .list-group-item {
-    padding: 0.75em 1.25em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: #e9ecef;
+}
+
+.btn-delete {
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-delete:hover {
+  color: darkred;
 }
